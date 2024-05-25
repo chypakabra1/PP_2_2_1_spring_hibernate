@@ -32,16 +32,16 @@ public class MainApp {
       userService.add(user3.setCar(car3).setUser(user3));
       userService.add(user4.setCar(car4).setUser(user4));
 
-      List<User> users = userService.listUsers();
+      /*List<User> users = userService.listUsers();
       for (User user : users) {
          System.out.println("Id = "+user.getId());
          System.out.println("First Name = "+user.getFirstName());
          System.out.println("Last Name = "+user.getLastName());
          System.out.println("Email = "+user.getEmail());
          System.out.println();
-      }
+      }*/
 
-      /*for (User user : userService.listUsers()) {
+      for (User user : userService.listUsers()) {
          System.out.println(user + " " + user.getCar());
       }
 
@@ -51,7 +51,7 @@ public class MainApp {
          User notFoundUser = userService.getUserByCar("User5", 50);
       } catch (NoResultException e) {
          System.out.println("Пользователя нет");
-      }*/
+      }
 
       context.close();
    }
