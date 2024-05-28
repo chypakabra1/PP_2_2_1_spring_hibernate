@@ -1,0 +1,7 @@
+hiber\dao\UserDaoImp.class
+hiber\model\User.class
+hiber\service\UserService.class
+hiber\MainApp.class
+hiber\dao\UserDao.class
+hiber\config\AppConfig.class
+hiber\service\UserServiceImp.class
